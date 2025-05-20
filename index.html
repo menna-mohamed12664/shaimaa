@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <title>Document</title>
+    <style>
+      ::placeholder{
+        text-align: right;
+      }
+    </style>
+</head>
+<body class="bg-green-900">
+    <header class="bg-amber-50 shadow-md">
+        <!-- اللوجو -->
+        <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+            <div class="text-3xl text-green-900 font-bold">
+                Olive Rose 🌿
+            </div>
+            <!-- الروابط -->
+        <nav class="md:flex space-x-6 hidden relative">
+            <a href="#" class="text-2xl text-green-800 hover:text-green-900 transition">Home</a>
+
+            <div class="group relative">
+            <a href="#" class="text-2xl text-green-700 hover:text-green-900  transition">Shop</a>
+            <div class=" absolute flex mt-2 left-0 w-auto bg-amber-50 rounded-lg opacity-0 group-hover:opacity-100
+            invisible group-hover:visible transition grid gap-4 p-4 duration-300">
+
+            <a href="#" class= "flex flex-wrap items-center w-28 hover:bg-green-700 p-2 rounded-lg transition">
+                <img src="imgeflower/fiddle-leaf-fig-513284_e997352c-52ce-4c64-bd25-12c5becd5ed2.webp" 
+                class="w-10 h-10 rounded-full object-cover">
+                <span class="text-green-800 font-medium">Fiddle leaf fig</span>
+            </a>
+             <a href="#" class=" flex flex-wrap hover:bg-green-700 rounded-lg p-2 transition">
+                <img src="imgeflower/upnpr7wt5s4v6pdsipcj_c9aed9ef-f33b-4497-a2d5-cf2799c710b0_1000x1000_crop_center.jpg.webp" 
+                class="w-10 h-10 rounded-full object-cover">
+                <span class="text-green-800 font-medium">Fiddle leaf fig</span>
+            </a>
+             <a href="#" class=" flex flex-wrap hover:bg-green-700 rounded-lg p-2 transition">
+                <img src="imgeflower/fiddle-leaf-fig-513284_e997352c-52ce-4c64-bd25-12c5becd5ed2.webp" 
+                class="w-10 h-10 rounded-full object-cover">
+                <span class="text-green-800 font-medium">Fiddle leaf fig</span>
+            </a>
+            </div>
+            </div>
+            <a href="#" class="text-2xl text-green-700 hover:text-green-900 transition">content</a>
+            <a href="#" class="text-2xl text-green-700 hover:text-green-900 transition">About</a>
+        </nav>
+        
+<div class="flex items-center space-x-4">
+    <button aria-label="Cart" class="relative text-green-700 hover:text-green-900 transition text-2xl md:text-3xl">
+    <i class="fa fa-shopping-cart"></i>
+    <span class="absolute -top-2 -right-2 bg-red-600 text-white text-xs rounded-full px-1">3</span>
+  </button>
+
+    <button aria-label="Account" class="text-green-700 hover:text-green-900 transition text-2xl md:text-3xl">
+    <i class="fa fa-user"></i>
+  </button>
+
+   <button aria-label="Search" class="text-green-700 hover:text-green-900 transition text-2xl md:text-3xl">
+    <i class="fa fa-search"></i>
+  </button>
+</div>
+<a href="#" class="bg-green-700 text-white px-5 py-2 rounded-full hover:bg-green-800 transition" id="buy">Buy now</a>
+
+        </div>
+    </header>
+ <!-- -------------------------------main------------------------------------------------- -->
+
+ <main class="min-h-screen flex flex-col justify-center items-center text-center mt-5">
+  <div class="w-full max-w-[1300px] h-auto bg-amber-50 rounded-2xl shadow-lg p-8 flex flex-col md:flex-row items-center justify-between">
+    
+  
+    <div class="flex-1 text-left pl-6">
+     <h1 class="text-6xl font-bold text-green-900 mb-4">Olive Rose</h1>
+<p class="text-green-800 text-xl mb-4">
+  Discover the timeless beauty of handmade artificial flowers – elegance that never fades.
+</p>
+      <button class="bg-green-900 text-white px-6 py-3 rounded-2xl hover:bg-green-700 transition flex items-center gap-2">
+        <i class="fas fa-shopping-bag"></i>
+        Shop Now
+      </button>
+    </div>
+
+  
+    <div class="flex-1 flex justify-center items-center">
+      <img src="imgeflower/download (1).png" class="max-w-full h-auto object-contain" alt="Car">
+    </div>
+  </div>
+</main>  
+ <!-- -------------------------------------------------------------------sec2-------------------------------------------------------------------------------------- -->
+ <section class="bg-green-900 p-10 list" > 
+      <h2 class="text-4xl text-amber-50 font-bold mb-6 text-center" id="buy">Our Products</h2>
+
+    <div class="flex justify-center mb-6">
+    <input type="text" id="search" placeholder="Search for products..." dir="auto"
+      class="px-3 py-2 w-full max-w-sm rounded-lg focus:outline-none focus:ring-2 focus:ring-green-700">
+     <p id="notFound" class="text-red-600 bg-amber-50 py-2 px-3 rounded-lg text-1xl m-2" style="display: none;">❌Unavailable</p>
+  </div>
+
+<!-- ------------------------------------------------------------- -->
+
+  
+   
+   
+ <div class="text-2xl text-green-600 mb-8 text-center"> 
+ <div class=" p-6 mt-20">
+  <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+
+
+   <div class="p-4 flex-col md:flex-row items-center gap-3 name" >
+   <div class="relative group rounded-2xl p-6 shadow-lg hover:shadow-lg transition">
+    <img src="imgeflower/Snake+Plant.jpg" class="max-w-full h-auto">
+       <div class="text-center">
+        <h3 class="text-lg font-semibold text-green-900 bg-amber-50 rounded-2xl mt-2">Snake Plant</h3>
+        <p class="text-sm font-semibold text-green-900 bg-amber-50 rounded-2xl mt-2">Snake plant is an easy indoor plant with tough leaves that needs little light and water.
+</p>
+        <del class="text-amber-50 text-xl font-bold">300$</del>
+        <p class="text-amber-50 text-xl font-bold">$249</p>
+      </div>
+         <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition list">
+    <div class="absolute top-6 right-7 z-20 bg-amber-50 rounded-full p-2 shadow-md hover:bg-amber-100 cursor-pointer">
+    <i class="fas fa-heart text-green-900"></i>
+  </div>
+       <button class="absolute bg-amber-50 py-2 px-2 top-20 right-7 z-20 rounded-full hover:bg-amber-100  items-center cursor-pointer cart" name="Snake Plant" price="249">
+      <i class="fas fa-shopping-cart text-green-900"></i> 
+    </button>
+   </div>
+  </div> 
+   </div>
+  <!-- --------------------------2------------------------- -->
+  <div class="p-4 flex-col md:flex-row items-center gap-6 name">
+       <div class="relative group  rounded-2xl p-6 shadow-lg hover:shadow-lg transition">
+    <img src="imgeflower/schefflera-arboricola-variegata-01_6160f1a2-f5e1-4526-8d47-c962ab1e1dd9.webp" class="max-w-full h-auto">
+       <div class="text-center">
+        <h3 class="text-lg font-semibold text-green-900 bg-amber-50 rounded-2xl mt-2">Schefflera</h3>
+        <p class="text-sm font-semibold text-green-900 bg-amber-50 rounded-2xl mt-2">
+          Schefflera is an easy-care indoor plant with umbrella-like leaves that thrives in bright, indirect light</p>
+        <del class="text-amber-50 text-xl font-bold">400$</del>
+        <p class="text-amber-50 text-xl font-bold">$320</p>
+      </div>
+   <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition list">
+    <div class="absolute top-6 right-7 z-20 bg-amber-50 rounded-full p-2 shadow-md hover:bg-amber-100 cursor-pointer">
+    <i class="fas fa-heart text-green-900"></i>
+  </div>
+      <button class="absolute bg-amber-50 py-2 px-2 top-20 right-7 z-20 rounded-full hover:bg-amber-100  items-center cursor-pointer cart" name="Schefflera" price="320">
+      <i class="fas fa-shopping-cart text-green-900"></i> 
+    </button>
+   </div>
+  </div> 
+  </div> 
+  <!-- --------------------------3------------------------ -->
+  <div class=" flex-col md:flex-row items-center gap-6 p-4 name">
+      <div class="relative group rounded-2xl p-6 shadow-lg hover:shadow-lg transition">
+    <img src="imgeflower/164042650-164042650-HC05042022_01-2100.webp" class="max-w-full h-auto">
+      <div class="absolute bg-green-900 top-5 left-6 text-amber-50 text-lg rounded z-10 font-semibold">14%</div>
+       <div class="text-center">
+        <h3 class="text-lg font-semibold text-green-900 bg-amber-50 rounded-2xl mt-2">Pothos</h3>
+        <p class="text-sm font-semibold text-green-900 bg-amber-50 rounded-2xl mt-2">
+          Pothos is a tough indoor plant with heart-shaped leaves.</p>
+        <del class="text-amber-50 text-xl font-bold">450$</del>
+        <p class="text-amber-50 text-xl font-bold">$387</p>
+      </div>
+      <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition list">
+    <div class="absolute top-6 right-7 z-20 bg-amber-50 rounded-full p-2 shadow-md hover:bg-amber-100 cursor-pointer">
+    <i class="fas fa-heart text-green-900"></i>
+  </div> 
+      <button class="absolute bg-amber-50 py-2 px-2 top-20 right-7 z-20 rounded-full hover:bg-amber-100  items-center cursor-pointer cart" name="Pothos" price="387">
+      <i class="fas fa-shopping-cart text-green-900"></i> 
+    </button>
+   </div>
+  </div>
+  </div>
+  <!-- --------------------------4--------------------------- -->
+  <div class=" p-4 name">
+      <div class="relative group  rounded-xl p-6 shadow-lg hover:shadow-lg transition">
+    <img src="imgeflower/upnpr7wt5s4v6pdsipcj_c9aed9ef-f33b-4497-a2d5-cf2799c710b0_1000x1000_crop_center.jpg.webp" class="max-w-full h-auto">
+       <div class="text-center">
+        <div class="absolute bg-green-900 top-5 left-6 text-amber-50 text-lg rounded z-10 font-semibold">20%</div>
+         
+        <h3 class="text-lg font-semibold text-green-900 bg-amber-50 rounded-2xl mt-2">Fiddle leaf fig</h3>
+        <p class="text-sm font-semibold text-green-900 bg-amber-50 rounded-2xl mt-2">
+          Fiddle Leaf Fig is a popular indoor plant with big, violin-shaped leaves.</p>
+        <del class="text-amber-50 text-xl font-bold">500$</del>
+        <p class="text-amber-50 text-xl font-bold">$400</p>
+       </div>
+    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition list">
+    <div class="absolute top-6 right-7 z-20 bg-amber-50 rounded-full p-2 shadow-md hover:bg-amber-100 cursor-pointer">
+    <i class="fas fa-heart text-green-900"></i>
+  </div>
+      <button class="absolute bg-amber-50 py-2 px-2 top-20 right-7 z-20 rounded-full hover:bg-amber-100  items-center cursor-pointer cart" name="Fiddle leaf fig" price="400">
+      <i class="fas fa-shopping-cart text-green-900"></i> 
+    </button>
+   </div>
+  </div>
+  </div>
+  <!-- -------------------------5------------------------- -->
+  <div class=" p-4 name">
+      <div class="relative group rounded-2xl p-6 shadow-lg hover:shadow-lg transition">
+    <img src="imgeflower/979615033213c3801558d4ebf1c05248.webp" class="max-w-full h-auto">
+       <div class="text-center">
+        <h3 class="text-lg font-semibold text-green-900 bg-amber-50 rounded-2xl mt-2">Ficus</h3>
+        <p class="text-sm font-semibold text-green-900 bg-amber-50 rounded-2xl mt-2">
+          Ficus is a plant from the mulberry family, used for decoration or as fruit trees like fig.
+        </p>
+        <del class="text-amber-50 text-xl font-bold">150$</del>
+        <p class="text-amber-50 text-xl font-bold">$100</p>
+      </div>
+      <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition list">
+    <div class="absolute top-6 right-7 z-20 bg-amber-50 rounded-full p-2 shadow-md hover:bg-amber-100 cursor-pointer">
+    <i class="fas fa-heart text-green-900"></i>
+  </div>
+      <button class="absolute bg-amber-50 py-2 px-2 top-20 right-7 z-20 rounded-full hover:bg-amber-100  items-center cursor-pointer cart" name="Ficus" price="100">
+      <i class="fas fa-shopping-cart text-green-900"></i> 
+    </button>
+   </div>
+  </div>
+  </div>
+  <!-- ---------------------------6--------------------------- -->
+  <div class=" p-4 name">
+      <div class="relative group  rounded-2xl p-6 shadow-md hover:shadow-lg transition">
+    <img src="imgeflower/ChineseEvergreenRedSiam6b.webp" alt="">
+       <div class="text-center" name="Snake Plant" price="249">
+         <div class="absolute bg-green-900 top-5 left-6 text-amber-50 text-lg rounded z-10 font-semibold">15%</div>
+        <h3 class="text-lg font-semibold text-green-900 bg-amber-50 rounded-2xl mt-2 ">Aglaonema</h3>
+        <p class="text-sm font-semibold text-green-900 bg-amber-50 rounded-2xl mt-2">
+          Aglaonema is a low-maintenance indoor plant known for its colorful, decorative leaves.
+
+        </p>
+        
+        <del class="text-amber-50 text-xl font-bold">500$</del>
+        <p class="text-amber-50 text-xl font-bold">$425</p>
+      </div>
+      <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition list">
+    <div class="absolute top-6 right-7 z-20 bg-amber-50 rounded-full p-2 shadow-md hover:bg-amber-100 cursor-pointer">
+    <i class="fas fa-heart text-green-900"></i>
+  </div>
+       <button class="absolute bg-amber-50 py-2 px-2 top-20 right-7 z-20 rounded-full hover:bg-amber-100  items-center cursor-pointer cart" name="Aglaonema" price="425">
+      <i class="fas fa-shopping-cart text-green-900"></i> 
+    </button>
+   </div>
+  </div>
+  </div>
+  <!-- ------------------------------7---------------------------------------------- -->
+   <div class=" p-4 name">
+      <div class="relative group rounded-2xl p-6 shadow-lg hover:shadow-lg transition">
+    <img src="imgeflower/gabriella-plants-4-peperomia-obtusifolia-albomarginata-37993406693621_1800x1800.webp" alt="">
+       <div class="text-center">
+        <h3 class="text-lg font-semibold text-green-900 bg-amber-50 rounded-2xl mt-2">Peperomia</h3>
+        <p class="text-sm font-semibold text-green-900 bg-amber-50 rounded-2xl mt-2 ">
+          Peperomia is a small, easy-to-care-for plant with thick, attractive leaves.
+
+        </p>
+        <del class="text-amber-50 text-xl font-bold">250$</del>
+        <p class="text-amber-50 text-xl font-bold" price="">$200</p>
+      </div>
+      <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition list">
+    <div class="absolute top-6 right-7 z-20 bg-amber-50 rounded-full p-2 shadow-md hover:bg-amber-100 cursor-pointer">
+    <i class="fas fa-heart text-green-900"></i>
+  </div>
+       <button class="absolute bg-amber-50 py-2 px-2 top-20 right-7 z-20 rounded-full hover:bg-amber-100  items-center cursor-pointer cart" name="Peperomia" price="200">
+      <i class="fas fa-shopping-cart text-green-900"></i> 
+    </button>
+   </div>
+  </div>
+  </div>
+  <!-- ---------------------------------------------------------------------- -->
+
+<div class="bg-amber-50 p-6 rounded-2xl shadow-lg col-span-2">
+  <h3 class="text-green-900 font-bold text-xl mb-2 flex items-center gap-2">
+    <i class="fa-solid fa-spa text-green-900"></i> Elegance in Every Petal
+  </h3>
+  <p class="text-green-800 mb-2">(Artificial Floral Boutique)</p>
+  <p class="text-gray-600 mb-4 text-md">
+    Fall in love with flowers that never fade.  
+    Our premium artificial roses are crafted with passion to capture the beauty of nature — with none of the limits.  
+    Whether you're gifting, decorating, or dreaming, Olive Rose brings everlasting charm to every moment.
+  </p>
+</div>
+
+
+
+  <div class="bg-amber-100 p-4 rounded shadow max-w-full h-auto"
+    style="background-image: url(imgeflower/upnpr7wt5s4v6pdsipcj_c9aed9ef-f33b-4497-a2d5-cf2799c710b0_1000x1000_crop_center.jpg.webp);
+    background-size: cover;">
+  </div>
+  <div class="bg-amber-50 p-4 rounded shadow max-w-full h-auto"
+   style="background-image: url(imgeflower/fiddle-leaf-fig-513284_e997352c-52ce-4c64-bd25-12c5becd5ed2.webp);
+   background-size: cover;">
+  </div>
+
+ <!-- -------------------المنتجات المشتراه----------------- -->
+<div id="content">
+</div>
+<button id="clear" class=" w-[150px] h-[40px] rounded-2xl px-6 py-3 bg-amber-50 text-green-900 hover:bg-amber-100 transition flex items-center" 
+style="display: none;">
+  Clear
+</button>
+<button id="showprice" class="w-[150px] h-[40px] rounded-2xl px-6 py-3 bg-amber-50 text-green-900 hover:bg-amber-100 transition flex items-center mt-2" 
+style="display: none;">
+  Showprice
+</button>
+
+    
+   </div>
+  </div>
+ </div>
+ 
+ 
+</section>
+<!-- ---------------------------------------------------------footer--------------------------------------------------------------------------------- -->
+ <footer class="bg-[#FAF3E0] text-[#2F4F4F] mt-20 pt-10  border-t border-[#dcdcdc]">
+  <div class="max-w-8xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
+    
+    <div>
+      <h2 class="text-2xl font-bold mb-3">Olive Rose 🌿 </h2>
+      <p class="text-sm text-[#555] leading-relaxed">
+        Everlasting beauty — we offer high-quality artificial flowers with elegant designs to brighten your space in a timeless way.
+      </p>
+    </div>
+
+    <div>
+      <h3 class="text-lg font-semibold mb-3">Links</h3>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#" class="hover:text-[#556B2F]">Home</a></li>
+        <li><a href="#" class="hover:text-[#556B2F]">Shop</a></li>
+        <li><a href="#" class="hover:text-[#556B2F]">Contact</a></li>
+        <li><a href="#" class="hover:text-[#556B2F]">About Us</a></li>
+      </ul>
+    </div>
+
+  
+    <div>
+      <h3 class="text-lg font-semibold mb-3">Contact</h3>
+      <p class="text-sm"> Cairo, Egypt</p>
+      <p class="text-sm">📞 +20 106 720 9080</p>
+    </div>
+
+  
+    <div>
+      <h3 class="text-lg font-semibold m-2">Follow Us</h3>
+      <div class="flex space-x-3 text-white">
+        <a href="#" class="w-9 h-9 flex items-center justify-center rounded-full bg-[#2F4F4F] hover:bg-[#556B2F] transition" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="#" class="w-9 h-9 flex items-center justify-center rounded-full bg-[#2F4F4F] hover:bg-[#556B2F] transition" aria-label="WhatsApp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="#" class="w-9 h-9 flex items-center justify-center rounded-full bg-[#2F4F4F] hover:bg-[#556B2F] transition" aria-label="TikTok">
+          <i class="fab fa-tiktok"></i>
+        </a>
+        <a href="#" class="w-9 h-9 flex items-center justify-center rounded-full bg-[#2F4F4F] hover:bg-[#556B2F] transition" aria-label="FaceBook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+ 
+
+
+    
+
+     
+
+
+ 
+
+
+ 
+
+     <script src="js/script.js"></script>
+</body>
+</html>
